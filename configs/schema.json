@@ -16,7 +16,7 @@
       },
       {
         "key": "initializer_token_to_receive_account_pubkey",
-        "type": "pub"
+        "type": "pub"    
       },
       {
         "key": "expected_amount",
