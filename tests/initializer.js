@@ -12,13 +12,13 @@ const init = async () => {
   const program = store.load('program');
   const programId = new PublicKey(program.address);
   const registers = store.load('abi').schema.map(register => {
-    register.publicKey = new PublicKey(register.address);
+    register.publicKey = new PublicKey(register.address);  
     return register;
   });
   return { connection, payer, programId, registers }
 }
 
-/**
+/**   
  * Account info
  */
 const info = async (register, connection) => {
