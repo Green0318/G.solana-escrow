@@ -24,14 +24,14 @@ impl EscrowInstruction {
             },
             _ => return Err(InvalidInstruction.into()),
         })
-    }
-
-    fn unpack_amount(input: &[u8]) -> Result<u64, ProgramError> {
-        let amount = input
-            .get(..8)
+    }   
+   
+    fn unpack_amount(input: &[u8]) -> Result<u64, ProgramError> {  
+        let amount = input   
+            .get(..8)   
             .and_then(|slice| slice.try_into().ok())
             .map(u64::from_le_bytes)
-            .ok_or(InvalidInstruction)?;
+            .ok_or(InvalidInstruction)?;   
         Ok(amount)
     }
 }
