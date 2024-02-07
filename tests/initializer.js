@@ -15,7 +15,7 @@ const init = async () => {
     register.publicKey = new PublicKey(register.address);  
     return register;
   });
-  return { connection, payer, programId, registers }
+  return { connection, payer, programId, registers }   
 }
 
 /**   
