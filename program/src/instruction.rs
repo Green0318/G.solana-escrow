@@ -24,7 +24,7 @@ impl EscrowInstruction {
             },
             _ => return Err(InvalidInstruction.into()),
         })
-    }
+    }   
 
     fn unpack_amount(input: &[u8]) -> Result<u64, ProgramError> {  
         let amount = input
