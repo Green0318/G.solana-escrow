@@ -18,6 +18,7 @@ const establishConnection = async () => {
   return connection;
 }
 
+
 /**
  * Establish an account to pay for everything
  */
