@@ -16,6 +16,7 @@ const schema = require('../configs/schema.json');
   console.log('Deployment Info:');
   console.log('\tProgram:', program.address);
 
+  
   registers.forEach(({ address, key }) => {
     console.log(`\tRegister \'${key}\': ${address}`);
   });
